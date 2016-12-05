@@ -1,0 +1,273 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin:400);
+
+body{
+    /*background: #151515;*/
+    max-width: 100%;
+
+}
+
+.container-fluid{
+    margin: 10px 10px 10px 10px;
+}
+.search-bar {
+    /*background: #151515;*/
+    height: 100%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.search-bar:before,
+.search-bar:after {
+    content: '';
+    display: block;
+    height: 2px;
+    margin: 0 0 0 0;
+    position: absolute;
+    width: 800px;
+}
+.row {
+    max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    color:#888;
+    padding:5px;
+}
+.search-bar form {
+    /*background: #111;*/
+    /*background: linear-gradient(#1b1b1b, #111);*/
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 1px #272727;
+    display: inline-block;
+    font-size: 0px;
+    margin: 15px auto 0;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.slider form{
+    /*background: #111;*/
+    /*background: linear-gradient(#1b1b1b, #111);*/
+    border: 1px solid #000;
+    border-radius: 5px;
+    /*box-shadow: inset 0 0 0 1px #272727;*/
+    display: inline;
+    font-size: 0px;
+    padding: 15px;
+
+    z-index: 1;
+
+}
+.search-bar input{
+    /*background: #222;*/
+    /*background: linear-gradient(#333, #222);*/
+    border: 1px solid #444;
+    border-radius: 5px 0 0 5px;
+    box-shadow: 0 2px 0 #000;
+    color: #888;
+    display: block;
+    float: left;
+    font-family: 'Cabin', helvetica, arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    height: 40px;
+    margin: 0;
+    padding: 0 10px;
+    text-shadow: 0 -1px 0 #000;
+    width: 500px;
+}
+
+.ie .search-bar input {
+    line-height: 40px;
+}
+
+.search-bar input::-webkit-input-placeholder {
+    color: #888;
+}
+
+.search-bar input:-moz-placeholder {
+    color: #888;
+}
+.slider input[type="range"]{
+    /*background: #222922;*/
+}
+
+.search-bar input:focus, .slider input[type = "range"]:hover {
+    /*animation: glow 800ms ease-out infinite alternate;*/
+    /*background: #222922;*/
+    /*background: linear-gradient(#333933, #222922);*/
+    /*border-color: #393;*/
+    /*box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;*/
+    /*color: #efe;*/
+    outline: none;
+}
+
+.search-bar input:focus::-webkit-input-placeholder {
+    color: #efe;
+}
+
+.search-bar input:focus:-moz-placeholder {
+    color: #efe;
+}
+
+.search-bar button {
+    background: #222;
+    background: linear-gradient(#333, #222);
+    box-sizing: content-box;
+    border: 1px solid #444;
+    border-left-color: #000;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 2px 0 #000;
+    color: #fff;
+    display: block;
+    float: top;
+    font-family: 'Cabin', helvetica, arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-shadow: 0 -1px 0 #000;
+    width: 80px;
+}
+.search-bar input[type="submit"]{
+
+    background: #222;
+    background: linear-gradient(#333, #222);
+    box-sizing: content-box;
+    border: 1px solid #444;
+    border-left-color: #000;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 2px 0 #000;
+    color: #fff;
+    display: block;
+    float: top;
+    font-family: 'Cabin', helvetica, arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-shadow: 0 -1px 0 #000;
+    width: 80px;
+}
+
+.slider input[type="submit"]{
+    background: #222;
+    background: linear-gradient(#333, #222);
+    box-sizing: content-box;
+    border: 1px solid #444;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 2px 0 #000;
+    color: #ffffff;
+    display: block;
+    float: top;
+    font-family: 'Cabin', helvetica, arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    align:"center";
+    position: relative;
+    text-shadow: 0 -1px 0 #000;
+    width: 100px;
+}
+.search-bar button:hover,
+.search-bar button:focus ,.slider input[type="submit"]:hover{
+    /*background: #292929;*/
+    /*background: linear-gradient(#393939, #292929);*/
+    color: #5f5;
+    outline: none;
+    content:"";
+}
+.slider label{
+    color: black;
+}
+.search-bar button:active {
+    /*background: #292929;*/
+    /*background: linear-gradient(#393939, #292929);*/
+    box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
+    top: 1px;
+}
+
+@keyframes glow {
+    0% {
+        border-color: #393;
+        box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+    }
+    100% {
+        border-color: #6f6;
+        box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
+    }
+}
+.form {
+    max-width: 100%;
+}
+.slider{
+    /*background: #151515;*/
+    height: 100%;
+    margin: 5px 5px 5px 5px;
+    text-align: center;
+    width: 50%;
+    float: left;
+}
+.slider form{
+    /*background: #111;*/
+    /*background: linear-gradient(#1b1b1b, #111);*/
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: inset 0 0 0 1px #272727;
+    display: inline-block;
+    font-size: 10px;
+    width:100%;
+    padding: 15px;
+    z-index: 1;
+}
+line {
+    stroke: #999;
+    stroke-opacity: 0.6;
+}
+
+.d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 10px;
+    width: 50%;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    text-align: center;
+    stroke: "red";
+}
+.node-label{
+
+    fill: black;
+}
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+}
+.buttonholder{
+    padding-top: 10px;
+}
+
+#scrollable { height: 300px; overflow: auto; border: solid 1px white;}
+#scrollable .inner { height: auto; }
+#scrollable .desc {
+    height: 100px;  margin: 2px 0;
+    background-color: steelblue;
+    color: white;
+}
+
+.parent{
+    background-color: gainsboro;
+}

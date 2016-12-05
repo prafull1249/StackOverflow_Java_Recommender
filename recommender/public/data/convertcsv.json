@@ -1,0 +1,314 @@
+{
+   "1": {
+      "type": "question",
+      "title": "Get Weekday from int",
+      "text": " i have this enum         and i can get the value from the day if i know what day i want  and i am having a brain freeze right now and am trying to do the oppostie. and cant figure it out    so i know i have number 2 and then want to return a variable of weekday type tuesday?    how can i do this?    thanks for the help :)  ",
+      "tag": "java enums ",
+      "weight": 50,
+      "keywords": "k1"
+   },
+   "2": {
+      "type": "question",
+      "title": "Editable multimap index",
+      "text": " i am having hard time looking for constructor to build mutable  . my code is:         since index returns   i really cannot modify it. however  i cannot see other options to do group by keyfunction for multimaps on  official documentation   ",
+      "tag": "java guava multimap ",
+      "weight": 10,
+      "keywords": "k2"
+   },
+   "3": {
+      "type": "question",
+      "title": "Tomcat - From HTTPS page to HTTP",
+      "text": " in tomcat 8  i enabled tls connector for secure data transmission  and i created a security constraint in my web.xml. through the site menu  the user can go to a login page  or to the home page. upon arriving at the login page  as i have set the security constraint  the user's browser starts a tls communication. if the user clicks on the index menu (home)  he returns to the home page  but remains an https communication. and i do not know for what reason this is happening.     could someone tell me if this is a normal behavior of tomcat  and if there is any possibility (not mentioned in the  other answer  of another user - 2013) today (almost 2015) for this to be changed and the user returns to communicate via http? for what reason redirect https to http is a costly process? there is another way?    all that i find on the internet is about changing an http communication to https  but that's not what i'm looking for. i already know how to do that. i'm just avoiding that when communication change from http to https it stays in https even if the user try to access all the other pages of my application. i do not want that. it makes no sense for the user to access the home page with a https communication.    for me  it makes little sense tomcat react that way. for what reason tomcat do that? moreover  even if things are so  for what reason tomcat developers limit it at this point? do the web sites today do not allow it?     note : i am currently using spring mvc  tomcat 8.0.15  and eclipse luna service.    thank you for your time and attention.       i know that something very similar has already been asked here before:     tomcat - can i force non https?      please : notice that there are differences in my question. i ask the moderators to read it and interpret it before simply click the close button. furthermore  face the text as a whole  as all being the question. do not try to go out searching for the question mark (?). i'm showing a situation.  ",
+      "tag": "java web-services security tomcat ssl ",
+      "weight": 55,
+      "keywords": "k3"
+   },
+   "4": {
+      "type": "question",
+      "title": "Separating array in other arrays",
+      "text": " i have an array that i need to split in different arrays. i have an array of strings and need to split it in different pages (different arrays).    at first  i get the length of the array  using         and then  i get the number of pages i need  knowing that each page should only have 10 strings         the user then select which page he wants to see         after that  i tried to split the array  but got some exceptions. i tried:         i get an exception when i try to print the values of the new array.    is there anyway to split an array in 'pages'  and display these 'pages' as requestes?    @edit1 i get a nullpointer exception  ",
+      "tag": "java arrays ",
+      "weight": 60,
+      "keywords": "k2"
+   },
+   "5": {
+      "type": "question",
+      "title": "Hibernate HQL Join with composite Key",
+      "text": " i'm having some problems trying to write a hql query to  join two entities/tables as below defined    customersdao.java          customernaming.java         address.java          addresskey.java         as you can see i have (to try this...i'm still learning hibernate...) create a composite pk in address  mapped by addresskey    so i have to create a composite join to do the search  but without success    this is my last (not best...lol) try...         in some case i've received a null query from createquery...    in this case...it simply can't recognise the query         note than a simpler search as below written works perfectly...         thanks for any help    regards umberto  ",
+      "tag": "java hibernate postgresql ",
+      "weight": 80,
+      "keywords": "k1"
+   },
+   "6": {
+      "type": "question",
+      "title": "Add JTree to JPanel in a ActionPerformed",
+      "text": " here is the complete verifiable minimal example of my problem  i believe and hope. if the jtree created with a defaultmutabletreenode added directly from the initialize () method adds me correctly (the line annotated code). but if i try from actionperformed method for you to operate a button  the jtree does not appear.         thanks again  topo.  ",
+      "tag": "java swing ",
+      "weight": 50,
+      "keywords": "k2"
+   },
+   "7": {
+      "type": "question",
+      "title": "Always on top ImageView",
+      "text": " how can i add an imageview to my application which is always on top of the app when the application is opened  even though the activity switched? i don't want to create the button on every single activity.  ",
+      "tag": "java android ",
+      "weight": 10,
+      "keywords": "k3"
+   },
+   "8": {
+      "type": "question",
+      "title": "How to declare a new activity in Android manifest?",
+      "text": " i've followed the android docs in adding a new activity to the manifest  but when i try to navigate to the class using a button click event i get a null pointer exception.    i gather from this that the class isn't being recognized as being present. to debug this i substituted the class name for   and it navigated succesfully.    can anyone see where i've made a mistake in the manifest?         this is the error in full detail below:      `  ",
+      "tag": "java android nullpointerexception android-manifest ",
+      "weight": 50,
+      "keywords": "k1"
+   },
+   "9": {
+      "type": "question",
+      "title": "Maven Dependency execution directory",
+      "text": " this is a question about maven at runtime.    scenario:         a client maven project depends on my module (modulea)   result : modulea and its transitive dependencies are downloaded into the clients maven repo.  correct?       the client maven project is built with jenkins.       during a phase of the jenkins maven build  the client maven project calls         what is the result of:           is it going to be somewhere under jenkins workspace or under the maven repo on jenkins box?  ",
+      "tag": "java maven jenkins maven-3 ",
+      "weight": 60,
+      "keywords": "k1"
+   },
+   "10": {
+      "type": "question",
+      "title": "Using digital signature to secure QR code",
+      "text": " i was looking for something like \\\"inverted asymmetric cryptography\\\" and came across a  great post   which actually covers what i need.   i want every user of my application has a public key allowing them to decrypt the message hidden in qr code which was encrypted with my private key. i want to make sure my system cannot be deceived by a fake qr code covering mine. accepted answer suggests using digital signature so i googled  java tutorial   showing how to use that feature.   here comes a little misunderstanting. i thought that using a digital signature  there would be a simple situation (let's call it a  ):       message is encrypted with private key   user reads encrypted message   user uses the public key to decrypt message.      however  my understanding is the digital signature works more like:      a digital signature is created using the private key and the message.   user needs the original message and the signature file.   user uses the digital signature to verify the message wasn't changed and comes from me.      am i right here? if so  how can i put both my message and signature in a qr code? things seemed pretty easy in case of   as i simply could encode the encrypted message using base64 and put the result in the qr code. however  it looks like i can't do the same thing without using tricks like  . how can i do so then?      oh  there is also an  answer from question \\\"qr code security\\\"  saying:        you can put anything you want in a qr code  including base-64 encoded bytes representing a signed document. no reader will know what to do with it; you'd have to write a custom app that scans and then knows to decode it and act accordingly.      according to the tutorial mentioned earlier it looks like the signed document itself is not enough though.  ",
+      "tag": "java encryption qr-code digital-signature ",
+      "weight": 30,
+      "keywords": "k2"
+   },
+   "11": {
+      "type": "question",
+      "title": "Using dispatchChange to stop volume changing",
+      "text": " i am trying to globally overwrite the volume up down button  which i have managed to do with the code below. the issue is i don't want the volume to change when i do. i have looked through the documentation on a content observer and found this method \\\"dispatchchange\\\". can i use it to cancel the volume change?       ",
+      "tag": "java android media volume ",
+      "weight": 50,
+      "keywords": "k3"
+   },
+   "12": {
+      "type": "question",
+      "title": "Collections.max function is returning hashcodes (I think)",
+      "text": " i believe my collections.max function is returning hash codes  but to be honest  i'm not entirely sure what is going on.    i am creating a list of trees with a random value of suitability  implementing a comparator  and then trying to find the highest suitability value (code is below).         my output looks like this:    learnfromcave.tree@60f32dde    tree number 1 has a suitability of 0.6114866528786418    learnfromcave.tree@60f32dde    tree number 2 has a suitability of 0.28381422309266247    learnfromcave.tree@3312b1dd    tree number 3 has a suitability of 0.8441348268153896    learnfromcave.tree@3312b1dd    tree number 4 has a suitability of 0.6269071898386682    learnfromcave.tree@3312b1dd    tree number 5 has a suitability of 0.08717540188464434    learnfromcave.tree@3312b1dd    tree number 6 has a suitability of 0.3810530158434646    learnfromcave.tree@3312b1dd    tree number 7 has a suitability of 0.0938353693923476    learnfromcave.tree@3312b1dd    tree number 8 has a suitability of 0.3656868216321937    learnfromcave.tree@105b3e5d    tree number 9 has a suitability of 0.9717207037612301    learnfromcave.tree@105b3e5d    tree number 10 has a suitability of 0.44423960773823645  ",
+      "tag": "java repast-simphony ",
+      "weight": 70,
+      "keywords": "k3"
+   },
+   "13": {
+      "type": "accepted-answer",
+      "title": "Collections.max function is returning hashcodes (I think)",
+      "text": "  calls   on  . since you did not override it  it calls the method on object  which just outputs the full class name and some additional information.    you need to implement  yourself to get an more readable output.       ",
+      "tag": "java repast-simphony ",
+      "weight": 80,
+      "keywords": "k2"
+   },
+   "14": {
+      "type": "question",
+      "title": "How many active users maximum does a Parse.com database allow on the free plan?",
+      "text": " i am exploring parse.com and building a proof-of-concept web application using the parse.com data storage. i keep receiving a daily app stats email. that's ok  and i noticed one of my database applications had 8 active users and it reported 14% of monthly quote. i tried to search around parse.com for its meaning but didn't get anything.    my question is how many users at maximum a database can handle on the free plan? my app will have as many as 300+ users.  ",
+      "tag": "java parse.com ",
+      "weight": 80,
+      "keywords": "k1"
+   },
+   "15": {
+      "type": "accepted-answer",
+      "title": "How many active users maximum does a Parse.com database allow on the free plan?",
+      "text": " my reading of the pricing and faq pages is that you are not accounted based on the number of users you have.  rather you are accounted based on your aggregate requests per second  file storage  database storage and data transfer.    the faq has this advice:        q: does requests per second roughly translate to # of concurrent users? i anticipate millions of users but i can't afford to pay $10m per month.        a: generally when your user count doubles  your requests per second also double. however  different apps send different numbers of requests per second depending on how frequently they save objects or issue queries. we estimate that the average app's active user will issue 10 requests. thus  if you had a million users on a particular day  and their traffic was evenly spread throughout the day  you could estimate your app would need about 10 000 000 total api requests  or about 120 requests per second. every app is different  so we strongly encourage you to measure how many requests your users send. you can see this in the performance analytics tab of your account.       so ....        my question is how many users at maximum a database can handle on the free plan? my app will have as many as 300+ users.      there is no limit the number of users  but if you have lots of simultaneous active users that is likely to translate into lots of requests per second.  the actual ratio depends on your application and what your users are doing.  that is impossible for us to predict.    however  if 8 active users takes about 15% of the allowed free usage  then a simple linear extrapolation says that are liable to need to start paying for capacity when you reach about 50 to 60 users.  but that is little better than a guess .... and it takes no account of how evenly the usage is spread over a typical 24 hour period.  ",
+      "tag": "java parse.com ",
+      "weight": 80,
+      "keywords": "k1"
+   },
+   "16": {
+      "type": "question",
+      "title": "4 digits numbers in an array as String",
+      "text": " i need a string array with the following attributes:      4 digits numbers    no repeating digits (\\\"1214\\\" is invalid)   no 0's       is there an easier way to do this than manually type it? like:         sorry for my english!   ",
+      "tag": "java ",
+      "weight": 80,
+      "keywords": "k1"
+   },
+   "17": {
+      "type": "question",
+      "title": "box-api search parameters not working?",
+      "text": " i'm using the java sdk to connect to box.  i find the root folder (this is a small dev instance so i don't mind searching from there.)  i execute the search query and i get results. my problem is that the search parameters do not seem to work consistently or at all.       for example  this query    iterator resultset = rootfolder.search(\\\"query=nr_chewy_chic_swt_pot_app&amp;file_extensions=jpg&amp;content_type=name&amp;type=file\\\").iterator();       returns three entries.            i remove the substring \\\"&amp;file_extensions=jpg\\\" because it doesn't seem to do anything and save/recompile/run and i get the same three results.     i change \\\"&amp;type=file\\\" to \\\"&amp;type=folder\\\" and i get the same three results.     i change \\\"query=nr_chewy_chic_swt_pot_app\\\" to \\\"query=nr\\\" and i get  no  results.  even though so user peter (who appears to work for box) says that partial strings should match 1 .       i've tried rearranging the order of the search parameters to no avail.  what am i missing?    thanks  eric b.  ",
+      "tag": "java search parameters sdk box-api ",
+      "weight": 20,
+      "keywords": "k2"
+   },
+   "18": {
+      "type": "question",
+      "title": "Android Bluetooth: java.io.IOException: Unexpected error or truncation during recvmsg",
+      "text": " tried to implement a bluetooth ssp server on android based on the  acceptthread sample .    the main difference was that i kept calling accept() on the server bluetooth socket to accept additional connections. whenever accept() returned a socket  i launched a new thread that wrote one byte to the output stream  read one byte from the input stream and closed to client socket.    made a small c# console app (using the 32feet.net package) to consume the service that looped and made sequential requests to the bluetooth server running on android.    result - after about 900 successful requests  the android code crashed with the following exception:         tried running the same server on galaxy s5 (android 4.4.2) and nexus 7 (a later kitkat)  with similar results. i must be doing something stupid (like not properly releasing resources)  but i am not sure what. is there any way of preventing the crash?    note: the acceptthread() is launched on a button click from the main activity. before the aforementioned crash occurs  i can launch the thread as many times as i want. however  after the crash  attempts to call  bluetoothadapter.createnewrfcommsocketandrecord()  end up with  java.lang.nullpointerexception: filedescriptor must not be null .    links to the source:   c# client    acceptthread    executethread   ",
+      "tag": "java android bluetooth ",
+      "weight": 20,
+      "keywords": "k3"
+   },
+   "19": {
+      "type": "question",
+      "title": "How can I check for invalid input and loop until the input is valid?",
+      "text": " i am trying to find the smallest number in the list from user input. i need to ask the user how many numbers are going to be in the list (and only accept positive numbers and no letters) and then ask them what the numbers are in the list (accepting only numbers). how can i check for this and keep looping until the numbers are valid?       ",
+      "tag": "java list loops ",
+      "weight": 30,
+      "keywords": "k2"
+   },
+   "20": {
+      "type": "question",
+      "title": "How to avro binary encode my json string to a byte array?",
+      "text": " i have a actual json string which i need to avro binary encode to a byte array. after going through the  apache avro specification   i came up with the below code.    i am not sure whether this is the right way to do it or not. can anyone take a look whether the way i am trying to avro binary encode my json string is correct or not?. i am using apache avro 1.7.7 version.       ",
+      "tag": "java json bytearray avro ",
+      "weight": 50,
+      "keywords": "k3"
+   },
+   "21": {
+      "type": "question",
+      "title": "Trying to build a Linked List in Java",
+      "text": " i am trying to build a simple   in   which takes chunks of a string. i am getting   when i try to pop the elements. below is my code. please help me out.       ",
+      "tag": "java ",
+      "weight": 60,
+      "keywords": "k2"
+   },
+   "22": {
+      "type": "question",
+      "title": "Spring mvc / Tomcat Servlet Container: multi threading initialization (and who spawns them?)",
+      "text": " i have tried to look online  and found only few places that says spring is actually multi-threaded. even those  seems to  hint  it simply uses a multi-threaded servlet container (as far as i understood  the single-threaded servlet containers are mostly deprecated  hence they all are multi-threaded these days).    i was hoping someone could clarify and validate that information; is the multi threading truly comes from servlet container and not spring?    and the more important question is  how do i initialize a per-thread data? as part of my database connection managing  i am using a library which requires me to initialize data in each thread.     currently  i am checking a value on every call to that library  to know to initialize it. but i prefer to simply initialize it every time a thread starts.    i believe it should be possible; after all  someone is creating those threads that keep calling my spring controllers.    p.s. i am using the default servlet container in spring  which is tomcat. i also tried doing a quick search for per-thread initialization and multi-threading in tomcat  but couldn't find any clear information on when a new thread actually spawn  or some information about a thread pool being used. i could be wrong though  and the multi threading is   ",
+      "tag": "java multithreading spring-mvc tomcat servlet-container ",
+      "weight": 40,
+      "keywords": "k1"
+   },
+   "23": {
+      "type": "question",
+      "title": "Convert a List&lt;Object&gt; to List String",
+      "text": "      whats the wrong. i get      i want to print the query like \\\"name:\\\"+firtname+\\\"articles:\\\"+count(ar)  ",
+      "tag": "java ",
+      "weight": 60,
+      "keywords": "k2"
+   },
+   "24": {
+      "type": "question",
+      "title": "Error in volley android sample code",
+      "text": " i am getting an error in this sample code from the android developer training. i get the error on the          the error is: \\\"method does not override method from its superclass\\\".     so i cant run the code. if i comment out the @override  i can run the code but i get no response from the request. please can anyone point me to what i am doing wrong? i copied the code as is from      http://developer.android.com/training/volley/simple.html  i am new to volley and i am trying to learn how it works. the full code is below       ",
+      "tag": "java android mobile android-volley ",
+      "weight": 20,
+      "keywords": "k2"
+   },
+   "25": {
+      "type": "question",
+      "title": "Multiple wsdl2java goals in pom.xml",
+      "text": " i need two wsdl2java goals in my pom.xml  and i want the java files to be written to two different folders. can someone please tell me how do i do it? i have the below content in my pom.xml currently  and i see its only working for the first wsdl2java goal  but not the second one.              please advise.  ",
+      "tag": "java maven ",
+      "weight": 50,
+      "keywords": "k1"
+   },
+   "26": {
+      "type": "accepted-answer",
+      "title": "Multiple wsdl2java goals in pom.xml",
+      "text": " create two  different build profile  and invoke   twice  once for both profile  or try multiple execution with different configuration  as suggested here   ",
+      "tag": "java maven ",
+      "weight": 70,
+      "keywords": "k3"
+   },
+   "27": {
+      "type": "question",
+      "title": "Problems with returning String[] from Java Web Service to Swing client",
+      "text": " i am just trying to return a string[] from a @webmethod to the ws swing client. the problem is that it is not returning anything. when i test the web service it shows           the web service method is        ",
+      "tag": "java xml web-services soap web ",
+      "weight": 90,
+      "keywords": "k1"
+   },
+   "28": {
+      "type": "question",
+      "title": "Android App can&#39;t save data to Parse",
+      "text": " i have created a sample app called noteapp  that can save data to parse. i have created the app in parse as per the image below  and have created the app..which is still in progress.     i have created the object\\\"testobject\\\"  i have matched the id  and imported data(ctrl+shift+o)but when i try to run the app  and check the parse dashboard  i can't see the object being created. i have tried this so many times  i don't know where the problem is. i just can't link my android app in eclipse with the parse.com. the app can't create the object  hence i can't save data.    here is the application code  and the manifest file  and the image of the parse.com dashboard.     noteapplication.java             the manifest file                   ",
+      "tag": "java android parse.com ",
+      "weight": 60,
+      "keywords": "k3"
+   },
+   "29": {
+      "type": "question",
+      "title": "How does java source code ultimately interact with files?",
+      "text": " i have been wondering about how the java compiler/interpreter manages to provide an interaction between bytecode/source code and file input and output.     i understand that inputstream and outputstream are the super-classes of all file i/o classes  but after reading through them  they provide no implementation for the basic file interaction methods (read() and write(byte b)). my initial idea was that perhaps the compiler would translate these methods into certain bytecode operations (that return a byte from a file or write a byte to a file) that only occur in this instance  but this may not be correct.    if java were compiled to assembly  then i understand that a certain instruction would be translated into platform-specific file i/o code (e.g. cout &lt;&lt; ... in c)  but this is obviously (afaik) not the case with java since it's compiled to bytecode.    can anyone enlighten me?  ",
+      "tag": "java file-io bytecode ",
+      "weight": 50,
+      "keywords": "k2"
+   },
+   "30": {
+      "type": "question",
+      "title": "JSch exception when using ssh",
+      "text": " i am using jsch to connect to a remote host using ssh private key.         i manually tried to ssh to that host and it works successfully. but  if i execute this java program  it fails to connect and throws exception. i am passing a private key as input to addidentity. the keys are generated using openssh(ssh-keygen). this is my error stack       ",
+      "tag": "java linux ssh jsch ",
+      "weight": 50,
+      "keywords": "k2"
+   },
+   "31": {
+      "type": "question",
+      "title": "Change image layout and position from java code",
+      "text": " i have this code in   file for an image:         i am uploading new image on click..          everything is working except image size.  i am getting large image after capturing image from camera. what should i do to get image on the same place with same width and height (as shown in xml).    thanks.  ",
+      "tag": "java android ",
+      "weight": 50,
+      "keywords": "k3"
+   },
+   "32": {
+      "type": "question",
+      "title": "classdefnotfound when referencing a java project on android",
+      "text": " i am experiencing what appears to be a unique error when trying to compile my android project. i am developing for api level 21 (lollipop)     my project references a java project i created previously. the project contains no error.     i have seen there are similar projects that have the same error. i have tried the following to fix the error:      moved android dependencies to first in the orders and export tab.   moved the gen folder above the src folder in orders and export.   ensured the comipler is set to 1.6.   ensured that google apis is selected as the build target.   ensured the project is added to projects under java build path   ensured all boxes are ticked in order and export.      if i comment out the lines referencing the java library the project works as you'd expect.     i would really appreciate any help on this  i am all out of ideas.    below is my stack trace:         edit: so i have spent all night messing with this and am really starting to feel like i cannot resolve it. i removed my project from eclipse and reimported it. removed all dependencies and readded it and i can't seem to find any way to resolve it. if anyone has any insight at l i would really appreciate it.     edit 2: after moving things around a bit  i am still getting the above error but also the below. hopefully it helps solve the problem.         edit 3:  ok i made a slight bit of progress.    i am creating a static object in java which has an anonymous inner class. that is what the $parser error was.  i moved the class into a new one called sinkimplementation and created a new object of it. the error message now changed to:          so for some reason  this class is causing me some issues.  my sinkimplementation class implements sink which is from a .jar file provided by open street map. the dependencies all seem to be ok and i struggling to get any further with this.   ",
+      "tag": "java android jvm noclassdeffounderror dalvik ",
+      "weight": 80,
+      "keywords": "k3"
+   },
+   "33": {
+      "type": "question",
+      "title": "Creating sub-resources for parent/child collection in REST JaxRs",
+      "text": " simple rest app with person-to-mailbox relationship.    (i'm using     for grails 2.3.x  code in groovy; otherwise same as java)         goal    i want to support creating mailboxes for specific persons:         current state    this is what i have so far  just standard rest resource operations for   and   (some operations omitted for brevity):    personcollectionresource + personresource         mailboxcollectionresource + mailboxresource         problem    how to best go about creating a mailbox for a person? should it be handled in    or handled from  ?         ideas    add   to   (not shown above)  and give   a reference to  :         then in    add    map it to           seems ok  just want to make sure i wasn't missing an easier jaxrs or jersey way of doing this.  ",
+      "tag": "java rest grails jersey jax-rs ",
+      "weight": 80,
+      "keywords": "k3"
+   },
+   "34": {
+      "type": "question",
+      "title": "(Java) Simple File Transfer (Client-Server) with Socket",
+      "text": " i'm working in an simple file transfer program but i really get a point where is impossible to continue  cause the compiler give the following error:        cliente_ftp.java:60: error: cannot find symbol                 conexion.enviar_archivo(nombre_archivo);  //    this is the line generating the error !!!                         ^   symbol:   method enviar_archivo(string)   location: variable conexion of type misocket 1 error      i'm just trying to create a new method (enviar_archivo and recibir_archivo) in a package (misocket) but it seams that is not reachable when this is called.. i will try to explain me better showing the code  firts i have a client side with interchange the log and password with the server  and until here everythng goes well  but when i try to call in method enviar_archivo in the class misocket and compile  i got the error above. please if some of you see what i'm doing bad please let me know.    this is the client whos call the clases misocket that is a socket extention.          the class misocket that contain the method to create socket  streams   send an receive messages  everything goes well but the methos that should send and receive files: package misocket;         regards /russo  ",
+      "tag": "java sockets networking client-server stream-socket-client ",
+      "weight": 40,
+      "keywords": "k2"
+   },
+   "35": {
+      "type": "question",
+      "title": "View post runnable not executed",
+      "text": " i try to iterate over 10 items and post view tasks for them when starting my activity.    in activity i have:          and the myimagetask is as following:         however  sometimes the log in myviewrunnable is shown for all 10  but sometimes  it isn't run for the first one  even though it was posted succesfully (returned true).    how can i make sure all 10 are always executed?   ",
+      "tag": "java android ui-thread ",
+      "weight": 60,
+      "keywords": "k2"
+   },
+   "36": {
+      "type": "question",
+      "title": "File upload not uploaded to server folder",
+      "text": " in my controller:         i did build a jsp file to upload file with some information from page1 using mvc    i wanna add ability to download the file from page2.    page2 it's just displaying all the books i have in my table.    i did method (uploadfile) to set the name in bd from the file name that i want to upload it and call the save method to save it in db.    i can't download the file from the page2 since the file didn't upload to the server folder.     when i'm debugging the value of destination is setting the path correctly. destination = assets\\\\bookpdfs\\\\testfile.pdf         how could i do this step?   ",
+      "tag": "java spring-mvc ",
+      "weight": 70,
+      "keywords": "k1"
+   },
+   "37": {
+      "type": "question",
+      "title": "Send additional data to Searchable with voice search",
+      "text": " in my application i'm performing voice search and text type search using search widget  but i need to pass some additional data.    in order to do that during type search i can overload   and pass extra arguments  but when it comes to voice search none of possibilities work that worked for type mode.     is there any way to pass additional data during voice search using search widget ?   ",
+      "tag": "java android ",
+      "weight": 90,
+      "keywords": "k1"
+   },
+   "38": {
+      "type": "question",
+      "title": "Call Block code dial up screen appears for fraction of second",
+      "text": " my code blocks calls from specific numbers. the problem is that the dial up screen appears for split second before ending the call. i have goggled the problem but found nothing. changing priority does not work. please see if anyone can give a solution. thanks!    code:       ",
+      "tag": "java android ",
+      "weight": 55,
+      "keywords": "k2"
+   },
+   "39": {
+      "type": "question",
+      "title": "ListView - change items from 1 to 2 lines",
+      "text": " how can i modify the code below so that each item has two lines instead of one? i want the code in the msample section the same layout as i've posted so please do not inappropriately modify it unless it is necessary. below is an image depicting what the list looks like with one line.    i know that the click event and list adapter codes needs to change  but i don't know what to.    i also have an xml called  list_item_entry.xml  that contains two text views (1 bigger than the other) in a linear layout but i'm not sure if i need to use that.               list_item_entry.xml           class errors               ",
+      "tag": "java android xml android-activity android-studio ",
+      "weight": 35,
+      "keywords": "k2"
+   }
+}
