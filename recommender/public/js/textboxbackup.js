@@ -1,5 +1,5 @@
-d3.json("data/test.json", function(data)
-{
+function text_box(data){
+
     /*  var question_array = [];
      data.main.forEach(function(d) {question_array.push(d.question)});
      var container = d3.select("#table")
@@ -226,6 +226,5 @@ d3.json("data/test.json", function(data)
             //console.log(scrollTop);
             return function(t) { this.scrollTop = i(t); };
         };
-    }
+    }}
 
-});

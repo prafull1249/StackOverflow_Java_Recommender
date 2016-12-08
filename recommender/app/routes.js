@@ -58,14 +58,15 @@ function getResponse(res, query){
     var file = 'public/data/test.json'
    // var obj = {name: 'JP'}
  
-    jsonfile.writeFileSync(file, res1)
+   // jsonfile.writeFileSync(file, res1)
    // var file = '/public/data/test.json';    
     //jsonfile.writeFileSync(file, jsonRes);
 //    setTimeout(function(){
 //    console.log('setTimeout');
 //    
 //    }   , 5000);   
-       res.json(jsonRes); 
+      // res.json(jsonRes); 
+     res.jsonp(jsonRes); 
     
 
   });

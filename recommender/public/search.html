@@ -32,10 +32,10 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="search-bar">
-                <form action="" method="">
+                <form action="/index.html" method="get">
                     
-                    <input type="search" id="input" placeholder="What are you looking for?">
-                    <input type="submit" value="Submit">
+                <!--    <input type="search" id="input" placeholder="What are you looking for?"> -->
+                    <input type="submit" value="Back">
                 </form>
             </div>
         </div>
@@ -62,18 +62,16 @@
             </div>
             <div class = "row">
                 <div class = "slider">
-                    <form method="post" action="demoform.asp">
                         <label for="titlesim">Title Similarity:</label>
                         <input type="range" name="points" id="titlesim" value="10" min="0" max="10" data-highlight="true"><br>
                         <label for="questionsim">Question Similarity:</label>
                         <input type="range" name="points" id="questionsim" value="10" min="0" max="10" data-highlight="true"><br>
                         <div class = "buttonholder" align="center" >
-                            <input id= "sim_submit" type="submit" data-inline="true" value="Submit" align="center" padding-top=10px>
+                        <button id = "titlebutton">Submit</button>    
+                    
                         </div>
-                    </form>
                 </div>
                 <div class="slider">
-                    <form>
                     <legend>Legend</legend>
                     <h4> <svg id = "svg1" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="10" cy="10" r="10" fill="#003F87"></circle>
@@ -85,7 +83,6 @@
                         <circle cx="10" cy="10" r="10" fill="#71B3FF"></circle>
                     </svg> - Low title similarity</h4>
                     <h4> Size depends on Question similarity</h4>
-                    </form>
                 </div>
             </div>
             <div class ="row">
@@ -96,13 +93,14 @@
 
     </div>
 </div>
-
+<div class="modal"><!-- Place at bottom of page --></div>
 
 
 <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
 <script defer src="js/plugins.js"></script>
 <script defer src="js/script.js"></script>
 <script src="js/CustomTooltip.js"></script>
+
 <script type="text/javascript">
     
     
@@ -122,25 +120,37 @@ $(function(){
     var url      = window.location.href;
     var query =    getParameterByName('query', url)
     var requri  = "/results?search="+query;
-    
+    $body = $("body");
+
+$(document).on({
+    ajaxStart: function() { $body.addClass("loading");    },
+     ajaxStop: function() { $body.removeClass("loading"); }    
+});
     
     requestJSON(requri, function(json) {
         
-      if(json.message == "Not Found" || query == '') {
-        $('#ghapidata').html("<h2>No User Info Found</h2>");
-      }
-      
-      else {
+//        $('#vis').html('<div id="loader"><img src="css/loader.gif" alt="loading..."></div>');
+//        
+//      if(json.message == "Not Found" || query == '') {
+//        $('#ghapidata').html("<h2>No User Info Found</h2>");
+//      }
+//      
+//      else {
         // else we have a user and we display their info
-        
-       
-       console.log(json);
-          
-        
+             //console.log(typeof(json));
+          //json = JSON.stringify(json);
+          //console.log(typeof(json));
+           json = JSON.parse(json);
+            //console.log(typeof(json));
+            //console.log(json);
+            
+            networkVis(json);
+            render_vis(json);
+            text_box(json);
         //window.location.href = "search.html?query="+query;
         
    
-      } // end else statement
+   //   } // end else statement
     }); // end requestJSON Ajax call
  // }); // end click event handler
   
@@ -182,6 +192,8 @@ $(function(){
 </script>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script src="networkD3.js"></script>
+<script src="js/vis.js"></script>
+<script src="js/textboxbackup.js"></script>
     
     
     
@@ -202,8 +214,8 @@ $(function(){
  
                 var s = document.createElement("script")
                 s.type="text/javascript";
-                s.src = "js/textboxbackup.js";
-                document.getElementsByTagName("body")[0].appendChild(s);
+                //s.src = "js/textboxbackup.js";
+               // document.getElementsByTagName("body")[0].appendChild(s);
  
                 callback();
             };
@@ -215,9 +227,12 @@ $(function(){
  
  
     // call the function...
-    loadScript("js/vis.js", function() {
+    //loadScript("js/vis.js", function(json) {
  
-    });
+   //});
+   
+    
+    
 </script>
     
     

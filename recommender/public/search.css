@@ -47,7 +47,7 @@ body{
     z-index: 1;
 }
 
-.slider form{
+.slider form,.slider{
     /*background: #111;*/
     /*background: linear-gradient(#1b1b1b, #111);*/
     border: 1px solid #000;

@@ -1,15 +1,15 @@
-(function() {
   var BubbleChart, root,
     __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
   var max_vote = 0;
   var max_sim = 0;
   var slider1 = document.getElementById("titlesim");
   var slider2 = document.getElementById("questionsim");
+  buttontitle = document.getElementById("titlebutton");
 
-  var inputElement = document.getElementById("sim_submit");
+  /*var inputElement = document.getElementById("sim_submit");
   inputElement.addEventListener('click', function(){
     slider_values(slider1,slider2);
-  });
+  });*/
 
   function slider_values(a,b){
     slider1 = a;
@@ -43,6 +43,8 @@
       this.data = data.main;
       this.width = 820;
       this.height = 600;
+        
+        d3.select('#gates_tooltip').remove();
       this.tooltip = CustomTooltip("gates_tooltip", 240);
       this.center = {
         x: this.width / 2,
@@ -106,7 +108,7 @@
         var tmp = 10 * (d.question_sim);
         return parseInt(tmp);
       });
-
+        max_sim = 0;
       data.main.forEach(function(d){
         if(d.title_sim > max_sim)
         {  
@@ -121,8 +123,28 @@
           }
         }
       });
-      max_sim = 100*max_sim;
-      //console.log(max_sim);
+      max_sim = 10* slider1.value *max_sim;
+      console.log(max_sim);
+
+        slider1 = document.getElementById("titlesim");
+        slider2 = document.getElementById("questionsim");
+        buttontitle = document.getElementById("titlebutton");
+
+        buttontitle.addEventListener("click",function(){
+            console.log("Here!");
+            console.log(slider1.value);
+            console.log(slider2.value);
+            slider_values(slider1,slider2);
+            d3.select("#svg_vis").remove();
+            render_vis(data);
+            text_box(data);
+        });
+        function slider_values(a,b){
+            slider1 = a;
+            slider2 = b;
+        }
+        
+        //console.log(max_sim);
       this.radius_scale = d3.scale.pow().exponent(0.7).domain([0, max_amount]).range([2, 40]);
       this.create_nodes();
       this.create_vis();
@@ -477,7 +499,9 @@
       content += "<span class=\"name\">Votes: </span><span class=\"value\"> " + data.vote_category + "</span><br/>";
       content += "<span class=\"name\">User Reputation: </span><span class=\"value\"> " + data.rep_category + "</span><br/>";
       content += "<span class=\"name\">Acceptance answer rate: </span><span class=\"value\"> " + data.acc_category + "</span>";
+       
       return this.tooltip.showTooltip(content, d3.event);
+        
     };
 
     BubbleChart.prototype.hide_details = function(data, i, element) {
@@ -495,14 +519,9 @@
 
   root = typeof exports !== "undefined" && exports !== null ? exports : this;
 
-  $(function() {
     var chart, render_vis;
     chart = null;
-    render_vis = function(json) {
-      chart = new BubbleChart(json);
-      chart.start();
-      return root.display_all();
-    };
+    
     root.display_all = (function(_this) {
       return function() {
         return chart.display_group_all();
@@ -542,7 +561,17 @@
         }
       };
     })(this);
-    return d3.json("data/test.json", render_vis);
-  });
+    
+    //return render_vis(json);
+    //return d3.json("data/test.json", render_vis);
+  
 
-}).call(this);
+
+
+function render_vis(json) {
+      chart = new BubbleChart(json);
+      chart.start();
+      return root.display_all();
+    };
+
+//render_vis(json);

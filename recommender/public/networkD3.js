@@ -1,4 +1,4 @@
-function networkVis() {
+function networkVis(gr) {
     var width = 500,
         height = 400,
         radius = 8;
@@ -16,8 +16,6 @@ function networkVis() {
         .attr("width", width)
         .attr("height", height);
     var ran;
-    d3.json("data/test.json", function (error, gr) {
-        if (error) throw error;
 
         var graph = gr.network;
         var edges = [];
@@ -72,6 +70,7 @@ function networkVis() {
             .text(function (d) {
                 return d.id;
             });
+        
         force
             .nodes(graph.nodes)
             .links(edges)
@@ -180,7 +179,6 @@ function networkVis() {
 
             return l;
         }
-    });
 }
 
-networkVis();
+//networkVis();
